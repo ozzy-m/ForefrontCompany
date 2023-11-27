@@ -1,9 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 body {
-    background-color:#322C2B
+    background-color:#1C083E
 }
 .forefrontgrey{
-    background-color:#7D7D7D
+    background-color:#504A54
 }
 #forefrontgrey{
-    background-color:#7D7D7D
+    background-color:#504A54
+}
+a {
+    font-family:"Kdam Thmor Pro";
+}
+p {
+    font-size:50;
+}
+.bodytext {
+    font-family: 'Courier New', monospace;
+}
+.center {
+text-align: center;
+margin: auto;
+}
+.image-box {
+    color:white
+}
+.largebutton {
+    width:200px;
+    height:50px;
+    font-size: large;
 }
