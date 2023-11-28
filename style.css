@@ -30,3 +30,9 @@ margin: auto;
     height:50px;
     font-size: large;
 }
+.text-box {
+    max-width: 500px; /* Adjust the max-width as needed */
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    padding: 10px; /* Add padding to the text box */
+}
