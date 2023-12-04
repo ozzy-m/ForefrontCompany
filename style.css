@@ -69,7 +69,6 @@ margin-right: auto;
  
 .main-content {
     text-align: center;
-    margin-top: 150px;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
