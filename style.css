@@ -47,3 +47,17 @@ margin-right: auto;
   canvas {
     display: block;
   }
+  .animation-container {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+    text-align:center ;
+    margin: auto;
+    
+  }
+  
+  .animation-container.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
