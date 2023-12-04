@@ -21,8 +21,16 @@
   setTimeout(function() {
     animationElement.classList.add('show');
   }, 500);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const mainContent = document.querySelector('.main-content');
+
+  setTimeout(function() {
+    mainContent.classList.add('animate');
+  }, 500);
 });</script>
   <body id="background">
+    <div class="main-content">
     <div class="bg-img"  style="background-image: url('img/A breathtakingl 0.png'); height:100vh;">
     <nav class="navbar-dark bg-body-tertiary">
         <div class="forefrontgrey container-fluid"><svg href="index.html" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 116 130" version="1.1">
@@ -56,9 +64,11 @@
           </div>
         </div>
       </nav>
+      
+    
       <div class="animation-container" class="center">
-  
-      <img  src="/img/forefront_logo-removebg-preview.png">
+
+      <img src="/img/forefront_logo-removebg-preview.png">
       </div>
       <div class=" col-12 container-fluid" padding:50px>
       <div  id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -117,5 +127,6 @@
 <footer class="bg-body-tertiary text-center p-3 mt-5" id="forefrontgrey">
   <p>&copy; 2023 ForeFront Gaming. All rights reserved.</p>
 </footer>
+</div>
 </body>
 </html>

@@ -60,4 +60,22 @@ margin-right: auto;
     opacity: 1;
     transform: translateY(0);
   }
+  footer {
+    background-color: #f8f9fa; /* Add your background color */
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+  }
+ 
+.main-content {
+    text-align: center;
+    margin-top: 150px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+  }
   
+  .main-content.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
