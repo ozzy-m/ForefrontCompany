@@ -1,7 +1,10 @@
-
+body {
+  min-height: max-content
+}
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 .forefrontgrey{
     background-color:#504A54
+    color(#504A54)
 }
 #forefrontgrey{
     background-color:#504A54
@@ -61,10 +64,11 @@ margin-right: auto;
     transform: translateY(0);
   }
   footer {
-    background-color: #f8f9fa; /* Add your background color */
+    background-color: #323436; /* Add your background color */
     text-align: center;
     padding: 1rem;
     bottom: 0;
+    margin-top: auto;
   }
  
 .main-content {
@@ -78,3 +82,52 @@ margin-right: auto;
     opacity: 1;
     transform: translateY(0);
   }
+
+  .floating {  
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    
+}
+
+.logofloating {  
+  animation-name: logofloating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(-1px,  0px); }
+  33%  { transform: translate(0px, 1px); }
+  66% { transform: translate(0px, -1px);}
+  100%   { transform: translate(-1px, -0px); }    
+}
+
+@keyframes logofloating {
+  0% { transform: translate(-4px,  0px); }
+  33%  { transform: translate(0px, 4px); }
+  66% { transform: translate(0px, -4px);}
+  100%   { transform: translate(-4px, -0px); }    
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.transparentbtn { 
+  cursor: pointer; 
+  border: 1px solid #3498db; 
+  background-color: transparent; 
+  height: 50px; 
+  width: 200px; 
+  color: #504A54; 
+  font-size: 1.5em; 
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+} 
