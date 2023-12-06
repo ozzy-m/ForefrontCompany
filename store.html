@@ -61,11 +61,25 @@
     </div>
   </nav>
 
-  <div class="container">
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const mainContent = document.querySelector('.main-content');
+
+      setTimeout(function () {
+        mainContent.classList.add('animate');
+      }, 500);
+    });
+  </script>
+
+  <div class="container main-content">
     <MARQUEE DIRECTION="down" SCROLLDELAY="500" SCROLLAMOUNT="1"
       ONMOUSEOVER="this.setAttribute('SCROLLAMOUNT', 0); this.stop()" 
       ONMOUSEOUT="this.setAttribute('SCROLLAMOUNT', 1); this.start()" BEHAVIOR="alternate"  STYLE="width:400px; height:100px">
-      <MARQUEE DIRECTION="right" SCROLLDELAY="500" SCROLLAMOUNT="1" BEHAVIOR="alternate">
+      <MARQUEE DIRECTION="right" SCROLLDELAY="500" SCROLLAMOUNT="1" 
+      ONMOUSEOVER="this.setAttribute('SCROLLAMOUNT', 0); this.stop()" 
+      ONMOUSEOUT="this.setAttribute('SCROLLAMOUNT', 1); this.start()" BEHAVIOR="alternate">
         <h1 class="floating" style="color: white; animation-duration: 5s; animation-delay: 0s">Store</h1>
       </MARQUEE>
     </MARQUEE>

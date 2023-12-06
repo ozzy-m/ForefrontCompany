@@ -98,17 +98,17 @@ margin-right: auto;
 }
 
 @keyframes floating {
-  0% { transform: translate(-1px,  0px); }
-  33%  { transform: translate(0px, 1px); }
-  66% { transform: translate(0px, -1px);}
-  100%   { transform: translate(-1px, -0px); }    
+  0% { transform: translate(-0.25%,  0%); }
+  33%  { transform: translate(0%, 0.25%); }
+  66% { transform: translate(0%, -0.25%);}
+  100%   { transform: translate(-0.25%, -0%); }    
 }
 
 @keyframes logofloating {
-  0% { transform: translate(-4px,  0px); }
-  33%  { transform: translate(0px, 4px); }
-  66% { transform: translate(0px, -4px);}
-  100%   { transform: translate(-4px, -0px); }    
+  0% { transform: translate(-1%,  0px); }
+  33%  { transform: translate(-0%, 1%); }
+  66% { transform: translate(-0%, -1%);}
+  100%   { transform: translate(-1%, -0%); }    
 }
 #background-video {
   opacity: 0.5;
@@ -130,5 +130,50 @@ margin-right: auto;
   width: 200px; 
   color: #504A54; 
   font-size: 1.5em; 
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.0); 
 } 
+.BebasNeue {
+  font-family: 'Bebas Neue', sans-serif;
+}
+#img-invert {
+  transition: filter .5s;
+}
+
+#img-invert:hover {
+  /* Apply filter to invert colors on hover */
+  filter: invert(100%);
+}
+.disappear-btn {
+  transition: opacity 0.5s ease; /* Adding a transition for opacity */
+}
+#contentDiv {
+  opacity: 1;
+  max-height: 1000px; /* Set a maximum height for smoother transition */
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease; /* Apply transitions */
+  /* Additional styles for the content div */
+  /* ... */
+}
+
+#contentDiv.hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0; /* Optionally remove padding when hidden */
+}
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#backToTopBtn.show {
+  display: block;
+}
