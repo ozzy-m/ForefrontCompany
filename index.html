@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-
+  <link rel="icon" type="image/png" href="/img/Black F favicon.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <title>|ForeFront Gaming|</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -26,16 +25,30 @@
     body {
       background-color: black;
     }
+
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@100&display=swap');
+
     .BebasNeue {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-                }
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+    }
   </style>
 </head>
 
 <body class="BebasNeue">
+  <div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Simulate content loading (remove setTimeout in actual usage)
+        setTimeout(function () {
+          // Hide the loader and display the content after the delay
+          document.querySelector('.loader-wrapper').style.display = 'none';
+          document.querySelector('.content').style.display = 'block';
+        }, 3000); // Change 3000 to the desired loading time in milliseconds
+      });
+    </script>
+  </div>
   <div id="video-background">
     <video autoplay muted loop id="video-background">
       <source src="bgvideo.mp4" type="video/mp4">
@@ -43,12 +56,12 @@
   </div>
   <nav style="background-color:#504A54" class="navbar-dark bg-body-tertiary">
     <div style="background-color:#504A54" class="forefrontgrey container-fluid">
-      <a  link="index.html"><img id="img-invert" src="/img/black F logo no background better.png" width="50px"></a>
+      <a link="index.html"><img id="img-invert" src="/img/black F logo no background better.png" width="50px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
             <a class="nav-link active  BebasNeue" aria-current="page" href="index.html">Homepage</a>
@@ -65,7 +78,7 @@
               Our Games
             </a>
 
-            <a  class="nav-link BebasNeue" href="store.html">Store</a>
+            <a class="nav-link BebasNeue" href="store.html">Store</a>
           </li>
         </ul>
       </div>
@@ -98,12 +111,7 @@
       <div class=" col-12 container-fluid" padding:50px>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="row align-items-center">
-            <div class="col-1">
-              <a class="btn" data-bs-target="#carouselExampleControls" role="button" data-bs-slide="prev">
-                <i class="carousel-control-prev-icon"></i>
-              </a>
-            </div>
-            <div class="col-10">
+            <div class="col-12 center">
               <div class=" carousel-inner">
                 <div class="carousel-item active">
                   <img src="img/A (((Soviet spa 1.png" class="d-block w-100" alt="...">
@@ -116,23 +124,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-1">
-              <a class="btn" data-bs-target="#carouselExampleControls" role="button" data-bs-slide="next">
-                <i class="carousel-control-next-icon"></i>
-              </a>
-              </a>
-
-            </div>
           </div>
-          <br>
-          <br>
-          <br>
           <br>
           <br>
           <br>
           <div class="center">
             <span><button style="background-color: transparent;" id="forefrontgrey"
-                class="btn mr-md-2 mb-md-0 mb-2 btn-outline-light disappear-btn" onclick="typeWriter()">About Forefront</button>
+                class="btn mr-md-2 mb-md-0 mb-2 btn-outline-light disappear-btn" onclick="typeWriter()">About
+                Forefront</button>
               <p class="bodytext" class="center" id="demo"></p>
 
               <script>
@@ -150,19 +149,19 @@
                     setTimeout(typeWriter, speed);
                   }
                 }
-                document.addEventListener("DOMContentLoaded", function() {
-  const buttons = document.querySelectorAll('.disappear-btn');
+                document.addEventListener("DOMContentLoaded", function () {
+                  const buttons = document.querySelectorAll('.disappear-btn');
 
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      this.style.opacity = '0'; // Fading out the button
-      this.style.pointerEvents = 'none'; // Disable pointer events to prevent clicking
-      setTimeout(() => {
-        this.style.display = 'none'; // Hide the button after the transition
-      }, 500); // Wait for the transition duration before hiding
-    });
-  });
-});
+                  buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                      this.style.opacity = '0'; // Fading out the button
+                      this.style.pointerEvents = 'none'; // Disable pointer events to prevent clicking
+                      setTimeout(() => {
+                        this.style.display = 'none'; // Hide the button after the transition
+                      }, 500); // Wait for the transition duration before hiding
+                    });
+                  });
+                });
               </script>
 
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -176,50 +175,45 @@
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+
       <br>
 
       <span style="background-color:#504A54">
         <footer class="bg-body-tertiary-dark text-center p-3 mt-5" style="background-color:#504A54" id="forefrontgrey">
-          <p >&copy; 2023 ForeFront Gaming. All rights reserved.</p>
+          <p>&copy; 2023 ForeFront Gaming. All rights reserved.</p>
         </footer>
       </span>
     </div>
   </div>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  const backToTopButton = document.getElementById('backToTopBtn');
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTopButton = document.getElementById('backToTopBtn');
 
-  // Function to check if user has scrolled down certain amount
-  function checkScroll() {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      // Function to check if user has scrolled down certain amount
+      function checkScroll() {
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollPosition > 300) { // Change 300 to the scroll amount where you want the button to appear
-      backToTopButton.classList.add('show');
-    } else {
-      backToTopButton.classList.remove('show');
-    }
-  }
+        if (scrollPosition > 300) { // Change 300 to the scroll amount where you want the button to appear
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      }
 
-  // Smooth scroll to top function
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+      // Smooth scroll to top function
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      // Event listener for scroll
+      window.addEventListener('scroll', checkScroll);
+
+      // Event listener for button click
+      backToTopButton.addEventListener('click', scrollToTop);
     });
-  }
-
-  // Event listener for scroll
-  window.addEventListener('scroll', checkScroll);
-
-  // Event listener for button click
-  backToTopButton.addEventListener('click', scrollToTop);
-});
-
   </script>
   <button id="backToTopBtn">Back to Top</button>
 </body>

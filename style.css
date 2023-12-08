@@ -177,3 +177,20 @@ margin-right: auto;
 #backToTopBtn.show {
   display: block;
 }
+.hidden-on-small {
+  display: block; /* Change this to the appropriate display property */
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .hidden-on-small {
+    display: none; /* Hide the element on smaller screens */
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@100&display=swap');
+
+.BebasNeue {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  font-size: 25px;}
+  

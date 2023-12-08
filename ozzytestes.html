@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="/img/Black F favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>|ForeFront Gaming|</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    #video-background {
+      opacity: .75;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@100&display=swap');
+
+    .BebasNeue {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body class="BebasNeue">
+  <div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Simulate content loading (remove setTimeout in actual usage)
+        setTimeout(function () {
+          // Hide the loader and display the content after the delay
+          document.querySelector('.loader-wrapper').style.display = 'none';
+          document.querySelector('.content').style.display = 'block';
+        }, 3000); // Change 3000 to the desired loading time in milliseconds
+      });
+    </script>
+  </div>
+  <div id="video-background">
+    <video autoplay muted loop id="video-background">
+      <source src="bgvideo.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<nav style="background-color:#504A54" class="navbar-dark bg-body-tertiary">
+  <div style="background-color:#504A54" class="forefrontgrey container-fluid">
+    <a href="index.html"><img id="img-invert" src="/img/black F logo no background better.png" width="50px"></a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active BebasNeue" aria-current="page" href="index.html">Homepage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link BebasNeue" href="aboutus.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="developers.html" class="nav-link BebasNeue">Developers</a>
+      </li>
+      <li class="nav-item">
+        <a href="games.html" class="nav-link BebasNeue">Our Games</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link BebasNeue" href="store.html">Store</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const animationElement = document.querySelector('.animation-container');
+
+      // Trigger animation after a short delay (e.g., 500 milliseconds)
+      setTimeout(function () {
+        animationElement.classList.add('show');
+      }, 500);
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      const mainContent = document.querySelector('.main-content');
+
+      setTimeout(function () {
+        mainContent.classList.add('animate');
+      }, 500);
+    });
+  </script>
+
+  <div class="main-content">
+    <div class="bg-img" style="background-image: url('img/A breathtakingl 0.png'); height:100vh;">
+      <div class="animation-container" class="center">
+        <img src="/img/forefront_logo-removebg-preview.png" class="logofloating"
+          style="animation-duration: 10s; animation-delay: 0s;">
+      </div>
+      <div class=" col-12 container-fluid" padding:50px>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="row align-items-center">
+            <div class="col-12 center">
+              <div class=" carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/A (((Soviet spa 1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/A (((Soviet spa 0.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/An (((astronaut 0.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="center">
+            <span><button style="background-color: transparent;" id="forefrontgrey"
+                class="btn mr-md-2 mb-md-0 mb-2 btn-outline-light disappear-btn" onclick="typeWriter()">About
+                Forefront</button>
+              <p class="bodytext" class="center" id="demo"></p>
+
+              <script>
+                var i = 0;
+                var txt =
+                  'Step into a world where gaming meets individuality at Forefront. We are not just a game studio; we are trailblazers in AI-driven experiences, crafting games that adapt uniquely to each player. Our cutting-edge technology redefines immersion, shaping dynamic worlds that respond to your choices and behavior. With Forefront, gaming transcends entertainment; it becomes a personalized journey, where every decision you make shapes the adventure. Join us at the forefront of innovation, where AI meets gaming to create unforgettable, tailored experiences.';
+                var speed = 40;
+
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    document.getElementById("demo").style.fontSize = "x-large";
+                    document.getElementById("demo").style.color = "white";
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+                document.addEventListener("DOMContentLoaded", function () {
+                  const buttons = document.querySelectorAll('.disappear-btn');
+
+                  buttons.forEach(button => {
+                    button.addEventListener('click', function () {
+                      this.style.opacity = '0'; // Fading out the button
+                      this.style.pointerEvents = 'none'; // Disable pointer events to prevent clicking
+                      setTimeout(() => {
+                        this.style.display = 'none'; // Hide the button after the transition
+                      }, 500); // Wait for the transition duration before hiding
+                    });
+                  });
+                });
+              </script>
+
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+          </div>
+        </div></span>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <span style="background-color:#504A54">
+        <footer class="bg-body-tertiary-dark text-center p-3 mt-5" style="background-color:#504A54" id="forefrontgrey">
+          <p>&copy; 2023 ForeFront Gaming. All rights reserved.</p>
+        </footer>
+      </span>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTopButton = document.getElementById('backToTopBtn');
+
+      // Function to check if user has scrolled down certain amount
+      function checkScroll() {
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollPosition > 300) { // Change 300 to the scroll amount where you want the button to appear
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      }
+
+      // Smooth scroll to top function
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+
+      // Event listener for scroll
+      window.addEventListener('scroll', checkScroll);
+
+      // Event listener for button click
+      backToTopButton.addEventListener('click', scrollToTop);
+    });
+  </script>
+  <button id="backToTopBtn">Back to Top</button>
+</body>
+
+</html>
