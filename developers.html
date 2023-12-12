@@ -38,7 +38,7 @@
     }
 
     .text-box {
-      max-width: 500px;
+      max-width: 1000px;
       background-color: black;
       color: white;
       padding: 10px;
@@ -64,11 +64,31 @@
       z-index: -1000;
     }
 
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@100&display=swap');
+
+    .BebasNeue {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+    }
+
   </style>
   <title>Image and Text Layout</title>
 </head>
 
-<body>
+<body class="BebasNeue">
+  <div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Simulate content loading (remove setTimeout in actual usage)
+        setTimeout(function () {
+          // Hide the loader and display the content after the delay
+          document.querySelector('.loader-wrapper').style.display = 'none';
+          document.querySelector('.content').style.display = 'block';
+        }, 3000); // Change 3000 to the desired loading time in milliseconds
+      });
+    </script>
+  </div>
   <div id="video-background">
     <video autoplay muted loop id="video-background">
       <source src="bgvideo.mp4" type="video/mp4">
@@ -149,8 +169,10 @@
     </div>
   </div>
 </body>
-<footer class="bg-body-tertiary text-center p-3 mt-5">
-  <p>&copy; 2023 ForeFront Gaming. All rights reserved.</p>
-</footer>
+<span style="background-color:#504A54">
+  <footer class="bg-body-tertiary-dark text-center p-3 mt-5" style="background-color:#504A54" id="forefrontgrey">
+    <p>&copy; 2023 ForeFront Gaming. All rights reserved.</p>
+  </footer>
+</span>
 
 </html>
